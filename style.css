@@ -1,9 +1,14 @@
 
-
- button {
-	background-color: lawngreen;
-	height: 150px;
-	width: 250px;
-	margin: auto;
-	 
- }
+ .quote {
+	margin-bottom: 20px;
+  }
+  
+  .quote-text {
+	font-size: 18px;
+	font-weight: bold;
+  }
+  
+  .quote-author {
+	font-size: 14px;
+	color: #777;
+  }
