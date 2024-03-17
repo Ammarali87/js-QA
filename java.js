@@ -17,6 +17,7 @@ var quotes = [
 	var quoteText = randomQuote[0];
 	var quoteAuthor = randomQuote[1];
 	return { text: quoteText, author: quoteAuthor };
+	generateRandomQuotes()
   }
   
   function generateRandomQuotes(numOfQuotes) {
