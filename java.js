@@ -1,4 +1,4 @@
- var quotes = [
+var quotes = [
     ["You only live once, but if you do it right, once is enough.", "Mae West"],
     ["I am so clever that sometimes I don't understand a single word of what I am saying.", "Oscar Wilde"],
     ["Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.", "Albert Einstein"],
@@ -9,9 +9,9 @@
     ["No one can make you feel inferior without your consent.", "Eleanor Roosevelt, This is My Story"],
     ["To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.", "Ralph Waldo Emerson"],
     ["Twenty years from now you will be more disappointed by the things that you didn't do than by the ones you did do. So throw off the bowlines. Sail away from the safe harbor. Catch the trade winds in your sails. Explore. Dream. Discover.", "H. Jackson Brown Jr., P.S. I Love You"]
-];
-
-var colors = [
+  ];
+  
+  var colors = [
     '#490A3D',
     '#BD1550',
     '#E97F02',
@@ -30,19 +30,19 @@ var colors = [
     '#472E32',
     '#77B1A9',
     '#73A857'
-];
-
-function generateQuote() {
+  ];
+  
+  function generateQuote() {
     var randomColor = Math.floor(Math.random() * colors.length);
     var randomNum = Math.floor(Math.random() * quotes.length);
     var quote = quotes[randomNum];
     var myquote = quote[0];
     var quoteName = quote[1];
     var getcolor = colors[randomColor];
-
+  
     document.getElementById("quote-text").innerHTML = myquote;
     document.getElementById("quote-author").innerHTML = " @ " + quoteName;
     document.getElementById("generate-btn").style.backgroundColor = getcolor;
-}
-
-document.getElementById("generate-btn").addEventListener("click", generateQuote);
+  }
+  
+  document.getElementById("generate-btn").addEventListener("click", generateQuote);
