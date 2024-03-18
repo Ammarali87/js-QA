@@ -1,14 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Random Quote Generator</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Random Quote Generator</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        
+        h1 {
+            color: #333333;
+        }
+        
+        #quote-container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        #quote-text {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        #quote-author {
+            font-size: 16px;
+            color: #888888;
+        }
+        
+        #generate-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #73A857;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-  <h1>Random Quote Generator</h1>
-         <button onclick="generateRandomQuote()"> new Quote </button>
-  <div id="quotes-container"></div>
+    <h1>Random Quote Generator</h1>
+    <div id="quote-container">
+        <p id="quote-text"></p>
+        <p id="quote-author"></p>
+        <button id="generate-btn">Generate</button>
+    </div>
 
-  <script src="java.js"></script>
+    <script>
+        // JavaScript code here...
+    </script>
 </body>
 </html>
